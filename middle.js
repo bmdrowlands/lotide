@@ -44,17 +44,4 @@ const middle = function(array1) {
 //console.log(middle(1, 2, 3))
 //console.log(middle([1, 2, 3, 4]))
 
-const middle = function(array1) {
-  if (array1.length === 1 || array1.length === 2){
-    return [];
-  }
-  if (array1.length % 2 === 1) {
-     const index = Math.floor(array1.length/2);
-     return [array1[index]]
-  } else {
-    const rightIndex = array1.length/2
-    const leftIndex = rightIndex - 1
-    return [array1[leftIndex], array1[rightIndex]]
-  }
-};
 
